@@ -5,7 +5,4 @@ body{
     color: #ffffff;
     font-family:Arial, Helvetica, sans-serif
 }
-<script>
-document.addEventListener('keydown', (event) => {
-            if (event.key.toLowerCase() === 'l') {
-                <a href="https://www.myinstants.com/media/sounds/extra-reverb-fard-noise.mp3">Play sound file</a>
+
