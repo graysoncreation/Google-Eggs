@@ -3,6 +3,24 @@ html{
 }
 body{
     color: #ffffff;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 
+.navbar{
+    background-color: #6df591;
+    display:flex;
+    margin:6px;
+}
+
+ul{
+    display:flex;
+}
+
+li{
+    margin:10px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
