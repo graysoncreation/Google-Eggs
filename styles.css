@@ -1,7 +1,9 @@
 html{
-    background-color: #34A853;
+    background-color: #15792f;
 }
 body{
+    display: flex;
+    flex-direction:column;
     color: #ffffff;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -10,6 +12,13 @@ body{
     background-color: #6df591;
     display:flex;
     margin:6px;
+}
+
+.main-content{
+    background-color: #34A853;
+    display:flex;
+    margin:6px;
+    padding: 6px;
 }
 
 ul{
