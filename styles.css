@@ -79,3 +79,11 @@ a:active {
 .navbar:hover{
     padding-bottom: 100;
 }
+
+.main-content2{
+    background-color: #34A853;
+    display:flex;
+    flex-direction: row;
+    margin:6px;
+    padding: 6px;
+}
