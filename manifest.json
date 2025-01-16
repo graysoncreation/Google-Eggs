@@ -1,7 +1,7 @@
 {
-    "name": "Your App Name",
-    "short_name": "App Short Name",
-    "description": "A brief description of your app",
+    "name": "Google Eggs",
+    "short_name": "Google E.",
+    "description": "The Google Eggs Web App",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
