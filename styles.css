@@ -87,3 +87,15 @@ a:active {
     margin:6px;
     padding: 6px;
 }
+
+.main-content3{
+    background-color: #34A853;
+    display:flex;
+    flex-direction: row;
+}
+
+.game-window{
+    flex:1;
+    padding: 0px;
+    place-content: 0px;
+}
