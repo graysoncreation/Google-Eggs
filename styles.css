@@ -99,3 +99,16 @@ a:active {
     padding: 0px;
     place-content: 0px;
 }
+
+#status {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.online {
+    background-color: lightgreen;
+}
+.offline {
+    background-color: lightcoral;
+}

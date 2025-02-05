@@ -25,6 +25,26 @@
 
         </ul>
     </div>
+
+    <div id="status" class="online">You are online</div>
+    <script>
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            if (navigator.onLine) {
+                statusDiv.textContent = 'You are online';
+                statusDiv.className = 'online';
+            } else {
+                statusDiv.textContent = 'You are offline';
+                statusDiv.className = 'offline';
+            }
+        }
+
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+
+        // Check status on page load
+        updateStatus();
+    </script>
     <div class="main-content2">
         <iframe src="https://scratch.mit.edu/projects/1115048689/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
         <p style="margin-left: 6px;">

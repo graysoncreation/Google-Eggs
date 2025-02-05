@@ -25,6 +25,26 @@
             <li><a href="archie.html">???</a></li>
         </ul>
     </div>
+
+    <div id="status" class="online">You are online</div>
+    <script>
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            if (navigator.onLine) {
+                statusDiv.textContent = 'You are online';
+                statusDiv.className = 'online';
+            } else {
+                statusDiv.textContent = 'You are offline';
+                statusDiv.className = 'offline';
+            }
+        }
+
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+
+        // Check status on page load
+        updateStatus();
+    </script>
     <div class="main-content">   
         WHAT WAS THE FIRST GOOGLE EASTER EGG?<br>
         Well, the first Google easter egg was made in 1998.<br>
