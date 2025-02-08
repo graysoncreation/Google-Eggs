@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>PRIVATE</title>
+    <title>Google Eggs - Contact</title>
     <link rel="icon" type="image/png" href="Google Egg.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
@@ -26,16 +26,30 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    
+
     <div id="status" class="online">You are online</div>
 
     <div class="main-content">
-        Oh jeez...<br>
-        YOU FOUND MY SECRET!<br>
-        I can't give it to you...sorry...<br>
-        But, you can have a star! ★<br>
-        .........................<br>
-        So you still want my secret.....fine.
-        <li><a href="PRIVATEsecrets.html">Click here.</a></li>
+
+        If you would like to contact me about errors, questions, or maybe if I need to add more things, just email "robloxfangts@gmail.com".<br>
+        DO NOT HACK ME
+    <script>
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            if (navigator.onLine) {
+                statusDiv.textContent = 'You are online';
+                statusDiv.className = 'online';
+            } else {
+                statusDiv.textContent = 'You are offline';
+                statusDiv.className = 'offline';
+            }
+        }
+
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+
+        // Check status on page load
+        updateStatus();
+    </script>
 </body>
 </html>
