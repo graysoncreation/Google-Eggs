@@ -75,3 +75,20 @@ a:active {
     background-color: rgb(0, 234, 255);
     text-decoration: none;
 }
+
+.online{
+    background-color: #2def61;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.offline{
+    background-color: #23ab47;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
