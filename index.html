@@ -31,11 +31,10 @@
 
     <div class="main-content">
 
-        Hello.<br>
-        This is where we learn about the Google Easter Eggs.<br>
+        <h1>Home</h1>
     
         1. Go to elgoog.com to get easter Eggs.<br>
-        2. Go to chrome://dino to play the dino game. ONLY COMPUTER!<br>
+        2. Go to chrome://dino to play the dino game.<br>
         3. Search askew for a tilted screen.<br>
         4. Search "do a barrel roll" for your screen to spin.<br>
         5. Search cats or dogs to press the paw button and see them!<br>
@@ -55,6 +54,7 @@
         17. If you search "christmas" and press the present, you find Santa Tracker.<br>
         18. Search "fidget spinner" to get a fidget spinner on your screen.<br>
         19. Search "solitare" to play solitare.<br>
+        <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,19)">Generate Google Easter Egg</button>
         -----------------<br>
         Want to see my YouTube channel? Go here! https://youtube.com/@iamactuallydp11n<br>
         Also, submit this form if you know another Google easter egg.<br>
@@ -80,6 +80,12 @@
 
         // Check status on page load
         updateStatus();
+    </script>
+
+<script>
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
     </script>
 </body>
 </html>

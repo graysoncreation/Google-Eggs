@@ -8,7 +8,7 @@
     "theme_color": "#000000",
     "icons": [
         {
-            "src": "egg.png",
+            "src": "snake.png",
             "sizes": "80x84",
             "type": "image/png"
         }
