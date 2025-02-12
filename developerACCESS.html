@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Google Eggs - Developer Mode</title>
+    <title>DEV MODE</title>
     <link rel="icon" type="image/png" href="Google Egg.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-   
-    <link rel="icon" type="image/png" href="Google Egg.png">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
@@ -29,32 +26,34 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="main-content">
 
-    <h1>Enter the password.</h1>
-
-    <div class="topnav">
-        <input type="password" id="hiddenInput" name="hiddenInput">
-        <button type="button" id="enterBUTTON">Enter</button>
-        
-      </div>
- <script>
-    let p = document.getElementById("hiddenInput")
-    const btn = document.querySelector("#enterBUTTON");
-    let password = 'irnvienvioenoie'
-    function checkPSW(p) {
-        if (p.value == password) { 
-            localStorage.setItem(password)
-            return true
+    <div id="status" class="online">You are online</div>
+    <script>
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            if (navigator.onLine) {
+                statusDiv.textContent = 'You are online';
+                statusDiv.className = 'online';
+            } else {
+                statusDiv.textContent = 'You are offline';
+                statusDiv.className = 'offline';
+            }
         }
-    }
-    function redirectUSER() {
-        if (checkPSW(p))
-            window.location.href = "developerACCESS.html";
-    }
-    btn.addEventListener("click", redirectUSER)
- 
- </script>
+
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+
+        // Check status on page load
+        updateStatus();
+
+        // check if user logged in
+        document.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem)
+                alert("hi")
+        });
+    </script>
+    <div class="main-content">
+        <button id="toggleButton">Turn Off Website</button>
+    </div>
 </body>
-   
 </html>
