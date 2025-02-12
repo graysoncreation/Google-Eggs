@@ -28,6 +28,7 @@
     </div>
 
     <div id="status" class="online">You are online</div>
+    
     <script>
         function updateStatus() {
             const statusDiv = document.getElementById('status');
@@ -50,10 +51,12 @@
         document.addEventListener("DOMContentLoaded", () => {
             if (localStorage.getItem)
                 alert("hi")
-        });
-    </script>
-    <div class="main-content">
+            else
+                window.location.href = "dev.html";
+        })
+        </script>
+        <div class="main-content">
         <button id="toggleButton">Turn Off Website</button>
     </div>
-</body>
+    </body>
 </html>
